@@ -1,0 +1,27 @@
+<div>
+    <h1>Tipo de cambio</h1>
+    <div>
+        <label>Cantidad:</label>
+        <input type="number" [(ngModel)]="cantidad">
+    </div>
+    <div>
+        <label>De:</label>
+        <select [(ngModel)]="inicial">
+            <option value="1">Pesos</option>
+            <option value="2">Dólares</option>
+        </select>
+    </div>
+    <div>
+        <label>Cantidad:</label>
+        <select [(ngModel)]="final">
+            <option value="1">Pesos</option>
+            <option value="2">Dólares</option>
+        </select>
+    </div>
+    <div>
+        <label>Resultado:</label>
+        <input type="number" [(ngModel)]="resultado" disabled>
+    </div>
+    <button (click)="calcular()">Calcular</button>
+    <h2>1 dólar = 19.35 pesos</h2>
+</div>
